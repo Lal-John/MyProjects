@@ -23,9 +23,7 @@ class BlinkitCollection1 {
    	 }
 	
 	public static void main(String[] args) {
-
 		System.out.println("Welcome To The Blinkit Store");
-
 		Scanner scanner = new Scanner(System.in);
 						
 		System.out.println("Enter a date to check bill summary (yyyy-MM-dd):");
