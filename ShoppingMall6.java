@@ -61,15 +61,12 @@ class BlinkitCollection1 {
 		} else {
  			System.out.println(" Folder already exists: " + billFolder.getAbsolutePath());
 		}
-
 		File dateFolder = new File(folderPath);
 
 		if (!dateFolder.exists() || !dateFolder.isDirectory()) {
     			System.out.println(" No bills found for " + inputDate);
     			return;
 		}
-		
-		// --- Count files --- 
 	
 		File[] jsonBills = dateFolder.listFiles((dir, name) -> name.endsWith(".json"));
 
